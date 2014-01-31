@@ -1,0 +1,13 @@
+<a id='mypic'>
+    <%=image_tag 'mypic.jpeg', :style => 'width:200px;height:150px;'%>
+</a>
+<script>
+  $(function(){
+    $("#mypic").bind('mouseover', function(){
+       $(this).find('img').css({'width': '400px', 'height': '300px', 'transition': '0.5s'});
+    });
+    $("#mypic").bind('mouseout', function(){
+          $(this).find('img').css({'width': '200px', 'height': '150px', 'transition': '0.5s'});
+    });
+  });
+</script>
