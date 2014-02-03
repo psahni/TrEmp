@@ -48,6 +48,9 @@ group :test do
   #gem "poltergeist", '~> 1.1.0'
   #gem 'launchy', '~> 2.2.0'
 end
+
+gem "bootstrap-sass", ">= 2.3.0.0"
+gem "devise", ">= 2.2.3"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
