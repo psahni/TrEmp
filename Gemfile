@@ -49,8 +49,10 @@ group :test do
   #gem 'launchy', '~> 2.2.0'
 end
 
-gem "bootstrap-sass", ">= 2.3.0.0"
+gem "twitter-bootstrap-rails"
+gem "bootstrap-sass", ">= 2.3.0.0" , :require => 'bootstrap-sass'
 gem "devise", ">= 2.2.3"
+gem "therubyracer"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

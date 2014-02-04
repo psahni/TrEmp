@@ -1,7 +1,16 @@
 TrantorEmployees::Application.routes.draw do
-   root :to => 'home#index'
 
-   resources :home, :only => :index
+  as :user do
+    root :to => "sessions#new", :via => :get
+  end
+
+  devise_for :users, :controllers => {:sessions => 'sessions'}  do
+  end
+
+
+
+
+  resources :home, :only => :index
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
