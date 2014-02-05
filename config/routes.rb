@@ -7,6 +7,9 @@ TrantorEmployees::Application.routes.draw do
   devise_for :users, :controllers => {:sessions => 'sessions'}  do
   end
 
+  namespace :api, defaults: {format: :json} do
+    resources :sessions, only: [ :create, :show, :destroy ]
+  end
 
 
 
